@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 - Home | Lincon</title>
+
+    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="author" content="Lincon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
+        <span>Lincon</span>
+    </div>
+
+    <button id="menuButton" aria-label="Open Navigation">&#9776;</button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="final/">Final</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<h1>Home</h1>
+
+<div class="content">
+
+<section class="card">
+
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Lincon, and I am currently studying Web Design and Development. I enjoy learning new technologies and improving my programming skills through hands-on projects.
+</p>
+
+<p>
+Outside of coding, I love listening to music, especially The Beatles. They are my favorite band, and I enjoy discovering more about their history and albums.
+</p>
+
+<p>
+In my free time, I also like watching movies and TV shows, spending time with friends and family, and exploring new ideas in technology. My goal is to become a skilled software developer and continue learning throughout my career.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>Student  Photo</h2>
+
+<img src="images/profile.webp"
+alt="Student Photo"
+width="250"
+height="300">
+
+</section>
+
+<section class="card full">
+
+<h2>Web and Computer Programming Certificate</h2>
+
+<div class="buttons">
+
+<button id="all">All Courses</button>
+<button id="wdd">WDD Courses</button>
+<button id="cse">CSE Courses</button>
+
+</div>
+
+<div id="courses"></div>
+
+<p id="credits"></p>
+
+</section>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="social">
+
+<a href="https://github.com/LinconCarmo" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+         alt="GitHub"
+         width="30">
+</a>
+
+   <a href="https://www.linkedin.com/in/linconeduardo2025" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+             alt="LinkedIn"
+             width="30">
+    </a>
+
+
+    <a href="https://facebook.com/" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+alt="Facebook"
+width="30">
+</a>
+
+</div>
+
+<p>
+    &copy; <span id="currentyear"></span> Lincon Carmo | Brazil
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
