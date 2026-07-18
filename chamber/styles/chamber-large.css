@@ -1,0 +1,40 @@
+/* chamber-large.css */
+
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav a {
+        padding: .75rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .view-buttons {
+        width: 300px;
+    }
+
+}

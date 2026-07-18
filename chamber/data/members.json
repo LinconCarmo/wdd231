@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Sunrise Bakery",
+        "address": "123 Main Street",
+        "phone": "(208) 555-1001",
+        "website": "https://example.com",
+        "image": "images/members/sunrise-bakery.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Green Valley Market",
+        "address": "45 Oak Avenue",
+        "phone": "(208) 555-1002",
+        "website": "https://example.com",
+        "image": "images/members/green-valley-market.webp",
+        "membership": "Silver"
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "89 Center Road",
+        "phone": "(208) 555-1003",
+        "website": "https://example.com",
+        "image": "images/members/tech-solutions.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "City Fitness",
+        "address": "300 Fitness Blvd",
+        "phone": "(208) 555-1004",
+        "website": "https://example.com",
+        "image": "images/members/city-fitness.webp",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Mountain Tea",
+        "address": "88 Pine Street",
+        "phone": "(208) 555-1005",
+        "website": "https://example.com",
+        "image": "images/members/mountain-tea.webp",
+        "membership": "Silver"
+    },
+    {
+        "name": "Blue Sky Travel",
+        "address": "77 River Road",
+        "phone": "(208) 555-1006",
+        "website": "https://example.com",
+        "image": "images/members/blue-sky-travel.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Happy Pets",
+        "address": "91 Park Avenue",
+        "phone": "(208) 555-1007",
+        "website": "https://example.com",
+        "image": "images/members/happy-pets.webp",
+        "membership": "Bronze"
+    }
+]
