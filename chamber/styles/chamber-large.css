@@ -37,17 +37,17 @@
         width: 300px;
     }
 
-}
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
 
-.home-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-}
+    .spotlight {
+        grid-column: span 3;
+    }
 
-.spotlight {
-    grid-column: span 3;
-}
+    #spotlights {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 
-#spotlights {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
