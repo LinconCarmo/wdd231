@@ -273,3 +273,122 @@ footer p {
 .spotlight-card a:hover {
     text-decoration: underline;
 }
+
+/* ---------- Join Page ---------- */
+
+.join-layout {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: .75rem;
+    margin-top: .35rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    background: #1f4e79;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+input[type="submit"]:hover {
+    background: #163b5c;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: .75rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+
+    animation: fadeUp .8s ease forwards;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: .45s;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: .75rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+dialog {
+    padding: 1.5rem;
+    border: none;
+    border-radius: .75rem;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,.5);
+}
+
+.close {
+    margin-top: 1rem;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+
+.application-info {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: .75rem;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
