@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Submission</title>
+  <meta name="description" content="Contact submission result page for Santos FC fan site">
+  <meta name="author" content="Lincon Carmo">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="icon" href="images/logo.png">
+  <meta property="og:title" content="Contact Submission">
+  <meta property="og:description" content="Your submitted message to Santos FC fan site.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>Contact Submission</h1>
+      <button class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="trophies.html">Trophies</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Submission Received</h2>
+    <div id="results" class="card"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const results = document.getElementById('results');
+      if (params.toString()) {
+        const name = params.get('name') || '';
+        const email = params.get('email') || '';
+        const message = params.get('message') || '';
+        results.innerHTML = `
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong> ${message}</p>
+        `;
+      } else {
+        results.textContent = 'No data received.';
+      }
+    </script>
+    <script type="module" src="scripts/menu.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2026 Lincon Carmo | WDD 231</p>
+    <p><a href="https://youtu.be/cQyYANBULx0" target="_blank" rel="noopener">Vídeo do Projeto</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santos FC - Home</title>
+  <meta name="description" content="Santos Football Club fan site - history, legends and honors">
+  <meta name="author" content="Lincon Carmo">
+  <meta property="og:title" content="Santos FC Fan Site">
+  <meta property="og:description" content="A fan site for Santos Football Club featuring legends, trophies, and club history.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <img class="club-logo" src="images/logo.png" alt="Santos Football Club logo">
+        <h1>Santos Football Club</h1>
+      </div>
+      <button class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="trophies.html">Trophies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="visit-message" aria-live="polite"></div>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Santos fans" loading="eager">
+      <div class="hero-overlay">
+        <h2>Welcome to the Santos FC fan site</h2>
+        <p>Explore club history, legendary players and major honors.</p>
+      </div>
+    </section>
+
+    <section class="welcome card">
+      <h2>About the Club</h2>
+      <p>Santos Football Club, founded in 1912, is one of Brazil's most celebrated football teams. The club gained worldwide fame during the Pelé era in the 1950s and 1960s and has produced numerous world-class talents.</p>
+      <p>Key milestones include international cups, multiple national championships, and a strong youth development tradition that launched stars like Pelé and Neymar.</p>
+    </section>
+
+    <section class="summaries">
+      <article class="card">
+        <h3>Players Summary</h3>
+        <p>Explore profiles of the club's most influential players, from Pelé to modern stars who began at Santos.</p>
+      </article>
+
+      <article class="card">
+        <h3>Titles Summary</h3>
+        <p>Major honors include national championships, Copa Libertadores victories and international club titles. See the Trophies page for aggregated counts.</p>
+      </article>
+    </section>
+
+    <section class="card stadium-card">
+      <h3>Stadium Santos FC</h3>
+      <div class="stadium-strip">
+        <img src="images/stadium.webp" alt="Vila Belmiro stadium" loading="lazy">
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Latest Announcement</h3>
+      <div id="fetch-demo">Loading announcement…</div>
+    </section>
+
+    <button id="open-modal" class="primary">More club info</button>
+
+    <div id="site-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+      <div class="modal-overlay" data-close></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close dialog" data-close>&times;</button>
+        <h3 id="modal-title">About this project</h3>
+        <p>This site demonstrates the course rubric requirements: dynamic items, accessible modal, localStorage visit message, and an async fetch demo.</p>
+      </div>
+    </div>
+    <script type="module" src="scripts/visit-message.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+    <script type="module" src="scripts/fetch-demo.js"></script>
+    <script type="module" src="scripts/menu.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lincon Carmo | WDD 231</p>
+    <p><a href="https://youtu.be/cQyYANBULx0" target="_blank" rel="noopener">Vídeo do Projeto</a></p>
+  </footer>
+</body>
+</html>

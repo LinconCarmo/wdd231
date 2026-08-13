@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Santos FC</title>
+  <meta name="description" content="Contact form for Santos FC fan site">
+  <meta name="author" content="Lincon Carmo">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="icon" href="images/logo.png">
+  <meta property="og:title" content="Contact Santos FC">
+  <meta property="og:description" content="Send a message to the Santos Football Club fan site.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>Santos Football Club</h1>
+      <button class="menu-toggle" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="trophies.html">Trophies</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form action="contact-action.html" method="get" class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="primary">Send</button>
+    </form>
+    <script type="module" src="scripts/menu.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lincon Carmo | WDD 231</p>
+    <p><a href="https://youtu.be/cQyYANBULx0" target="_blank" rel="noopener">Vídeo do Projeto</a></p>
+  </footer>
+</body>
+</html>
